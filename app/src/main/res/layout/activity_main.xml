@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/root"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TableLayout
+        android:id="@+id/tableLayout"
+        android:layout_width="404dp"
+        android:layout_height="404dp"
+        app:layout_constraintBottom_toTopOf="@+id/button"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Expression"
+        app:layout_constraintVertical_bias="0.5">
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Num1"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:onClick="Write1"
+                app:srcCompat="@drawable/numbers_1_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Num2"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:onClick="Write2"
+                app:srcCompat="@drawable/numbers_2_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Num3"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="Write3"
+                app:srcCompat="@drawable/numbers_3_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Plus"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:onClick="Plus"
+                app:srcCompat="@drawable/science_plus_math_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Num4"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="Write4"
+                app:srcCompat="@drawable/numbers_4_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Num5"
+                android:layout_width="100dp"
+                android:layout_height="match_parent"
+                android:onClick="Write5"
+                app:srcCompat="@drawable/numbers_5_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Num6"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="Write6"
+                app:srcCompat="@drawable/numbers_6_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Minus"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:onClick="Minus"
+                app:srcCompat="@drawable/science_minus_math_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/Num7"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="Write7"
+                app:srcCompat="@drawable/numbers_7_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Num8"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="Write8"
+                app:srcCompat="@drawable/numbers_8_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Num9"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="Write9"
+                app:srcCompat="@drawable/numbers_9_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Multiply"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:onClick="Multiply"
+                app:srcCompat="@drawable/science_multiply_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+        <TableRow
+            android:layout_width="match_parent"
+            android:layout_height="95dp">
+
+            <ImageView
+                android:id="@+id/Erase"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:onClick="ClearText"
+                app:srcCompat="@drawable/trash"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Num0"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:onClick="Write0"
+                app:srcCompat="@drawable/numbers_0_black_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Equal"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:onClick="Calculate"
+                app:srcCompat="@drawable/science_equal_sign_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/Divide"
+                android:layout_width="wrap_content"
+                android:layout_height="100dp"
+                android:onClick="Divide"
+                app:srcCompat="@drawable/science_percentage_icon"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </TableRow>
+
+    </TableLayout>
+
+    <TextView
+        android:id="@+id/Title"
+        style="@style/Widget.AppCompat.TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Calculator"
+        android:textSize="34sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/Expression"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <EditText
+        android:id="@+id/Expression"
+        android:layout_width="382dp"
+        android:layout_height="80dp"
+        android:ems="10"
+        android:hint="Expression"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/tableLayout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/Title"
+        app:layout_constraintVertical_bias="0.5" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#0027FF"
+        android:onClick="ViewHistory"
+        android:text="History"
+        android:textSize="34sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tableLayout"
+        app:layout_constraintVertical_bias="0.5" />
+</androidx.constraintlayout.widget.ConstraintLayout>
